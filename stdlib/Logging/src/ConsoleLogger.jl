@@ -48,6 +48,7 @@ function showvalue(io, e::Tuple{Exception,Any})
     ex,bt = e
     showerror(io, ex, bt; backtrace = bt!=nothing)
 end
+showvalue(io, stack::Base.ExceptionStack) = Base.display_error(io, stack)
 showvalue(io, ex::Exception) = showerror(io, ex)
 
 function default_logcolor(level)
