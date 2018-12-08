@@ -104,6 +104,10 @@ Explicitly passing `task` will return the current exception stack on an
 arbitrary task. This is useful for inspecting tasks which have failed due to
 uncaught exceptions.
 
+!!! experimental
+    This function is experimental and will likely be renamed in a future julia
+    release. See https://github.com/JuliaLang/julia/pull/29901.
+
 !!! compat "Julia 1.1"
     This function requires at least Julia 1.1.
 """
